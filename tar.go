@@ -130,7 +130,7 @@ func ExtractTar(stream io.Reader) {
 			lastLog = time.Now()
 		}
 	}
-	// Wait for all threads to finish, otherwise fastar
+	// Wait for all threads to finish; otherwise, fastar
 	// might exit before last few files done writing.
 	wg.Wait()
 }
