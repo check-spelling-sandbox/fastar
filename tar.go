@@ -113,13 +113,13 @@ func ExtractTar(stream io.Reader) {
 		default:
 			if opts.IgnoreNodeFiles {
 				log.Println(
-					"ExtractTarGz: uknown type:",
+					"ExtractTarGz: unknown type:",
 					string(header.Typeflag),
 					" in ",
 					header.Name)
 			} else {
 				log.Fatal(
-					"ExtractTarGz: uknown type:",
+					"ExtractTarGz: unknown type:",
 					string(header.Typeflag),
 					" in ",
 					header.Name)
